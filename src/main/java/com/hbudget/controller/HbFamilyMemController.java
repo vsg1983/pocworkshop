@@ -1,5 +1,8 @@
 package com.hbudget.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.http.RequestEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -13,8 +16,7 @@ import com.hbuget.vo.HbFamilyMember;
 @RequestMapping("hbudget")
 public class HbFamilyMemController {
 	
-	@
-	
+
 	@RequestMapping(value = "register",method = RequestMethod.POST )
 	public String register(@RequestBody() HbFamilyMember famMem) {		
 		return "success";
@@ -22,7 +24,7 @@ public class HbFamilyMemController {
 	
 	@RequestMapping(value = "registers",method = RequestMethod.GET )
 	public List<String> registers(@RequestBody() HbFamilyMember famMem) {		
-		return "success";
+		return new ArrayList<String>();
 	}
 
 }
