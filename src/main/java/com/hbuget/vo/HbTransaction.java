@@ -42,9 +42,7 @@ public class HbTransaction implements Serializable {
 
 	public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
-	}
-
-	
+	}	
 
 	public Date getTransDate() {
 		return transDate;
