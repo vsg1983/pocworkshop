@@ -1,4 +1,4 @@
-package com.hbuget.dao;
+package com.hbudget.dao;
 
 import java.util.List;
 
